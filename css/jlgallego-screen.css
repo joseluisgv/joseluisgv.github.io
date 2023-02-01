@@ -187,8 +187,7 @@ input.button {
 	text-align: left;		
 }
 #content-wrapper {
-	margin: 0 auto;	
-	background: #fff url(../images/content-bg.gif) repeat-y center top;	
+	margin: 0 auto;		
 	padding-bottom: 35px;
 	padding-top: 5px;		
 	overflow: auto;
@@ -210,7 +209,7 @@ input.button {
 	margin: 0; padding: 0 5px 0 0;
 	font: normal 75px Georgia, 'Times New Roman', Times, serif;
 	letter-spacing: -6px;
-	color: #93b876;
+	color: var(--main-text-color);
 	text-decoration: none;
 		
 	/* change the values of top and left to adjust the position of the logo*/
@@ -218,19 +217,20 @@ input.button {
 }
 #header h1#logo-text a:hover { border: none; }
 #header p#intro {
-	position: absolute;
-	margin: 0; padding: 0;
-	font-family: Georgia, 'Times New Roman', Times, Serif;
-	font-weight: normal;
-	font-size: 17px;
-	line-height: 1.6em;
-	font-style: italic;
-	letter-spacing: -.5px;
-	color: #7ba45b;
-	width: 400px;
-	
-	/* change the values of top and left to adjust the position */
-	top: 175px; left: 110px;		
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    font-family: Georgia, 'Times New Roman', Times, Serif;
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 1.6em;
+    font-style: italic;
+    letter-spacing: -.5px;
+    color: #7ba45b;
+    width: 400px;
+    top: 156px;
+    left: 21px;
+    text-align: left;
 }
 #header #header-image {
 	position: absolute;
@@ -283,7 +283,7 @@ input.button {
 	float: left;	
 	list-style: none;	
 	margin: 5px 0 0 0;
-	height: 45px;
+	height: 30px;
 	padding: 0 0 0 15px;					
 }
 #header #nav ul li {
@@ -293,9 +293,9 @@ input.button {
 #header #nav ul li a {
 	float: left;
 	margin: 0;
-	padding: 0 15px 0 5px;
+	padding: 0 10px;
 	color: #666666;
-	font: bold 14px/40px 'Trebuchet MS', 'Helvetica Neue', Arial, Sans-Serif;
+	font: bold 14px/30px 'Trebuchet MS', 'Helvetica Neue', Arial, Sans-Serif;
 	text-transform: uppercase;	
 }
 #header #nav ul li a:hover, 
@@ -305,11 +305,10 @@ input.button {
 	background: transparent;
 }
 #header #nav ul li#current {
-	background: transparent url(../images/left-tab.gif) no-repeat;	
 }
 #header #nav ul li#current a {	
 	color: #444;
-	background: transparent url(../images/right-tab.gif) no-repeat right top;	
+	border-bottom: 2px solid;
 }
 
 /* main column */
