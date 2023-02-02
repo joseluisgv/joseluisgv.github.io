@@ -83,8 +83,12 @@ p, dl { padding: 10px 15px; }
 /* Images */
 img {
 	background: #FAFAFA;
-   border: 1px solid #DCDCDC;
+   	border: 1px solid #DCDCDC;
 	padding: 8px;
+}
+body.post div#main img {
+    width: 80%;
+    margin: 0 9%;
 }
 img.float-right {
   	margin: 5px 0px 10px 10px;  
