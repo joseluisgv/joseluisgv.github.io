@@ -308,6 +308,11 @@ body.post #header h1#logo-text {
 	font: bold 14px/30px 'Trebuchet MS', 'Helvetica Neue', Arial, Sans-Serif;
 	text-transform: uppercase;	
 }
+body.post #header #nav ul li,
+body.post #header #nav ul li a {
+	padding: 0;
+}
+
 #header #nav ul li a:hover, 
 #header #nav ul li a:active {
 	border: none;
