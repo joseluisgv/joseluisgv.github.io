@@ -369,6 +369,14 @@ body.post #header #nav ul li a {
 	padding-bottom: 3px;
 	border-bottom: 1px solid #ebebeb;	
 }
+body.post #main h2 {
+    font: normal 1.7em Georgia, 'Times New Roman', Times, Serif;
+    letter-spacing: -1.9px;
+}
+body.post #main h3 {
+	font: normal 1.5em Georgia, 'Times New Roman', Times, Serif;
+    letter-spacing: -1.5px;
+}
 #main h2 a {
 	color: #444;
 	border: none;
