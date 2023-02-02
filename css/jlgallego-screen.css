@@ -24,16 +24,30 @@ body {
 /* Links */
 a:link, a:visited { 
 	text-decoration: none;
-	color: #AE855C;	
+	color: var(--secondary-text-color);	
 }
 a:hover {
-	border-bottom: 1px dotted #AE855C;	
+	border-bottom: 1px dotted var(--secondary-text-color);	
 }
 a.more-link {
 	padding-bottom: 2px;
 	font-weight: bold;	
-	border-bottom: 1px dotted #AE855C;	
+	border-bottom: 1px dotted var(--secondary-text-color);	
+	font-size: 80%;
 }
+.post_excerpt p a.more-link {
+    display: block;
+    margin-bottom: 2.5em;
+}
+.excerpts_container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    align-content: flex-start;
+}
+
 a:hover.more-link {
 	text-decoration: none;
 }
