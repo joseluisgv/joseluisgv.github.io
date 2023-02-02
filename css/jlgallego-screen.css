@@ -7,9 +7,10 @@
 	Last Date Modified : September 29, 2008	
  ------------------------------------------------ */
  
- :root {
+:root {
 	--main-text-color: #3f4d80;
-  }
+	--secondary-text-color: #c18b27; /*AE855C*/
+}
 
 /* ----------------------------------------------
    HTML ELEMENTS
@@ -47,14 +48,6 @@ h2 { font-size: 2.8em; font-weight: normal; color: #663333; }
 h3 { font-size: 2em; font-weight: normal; letter-spacing: -0.5px; padding-top: 15px}
 h4 { font-size: 1.3em; }
 
-body.post h1 {
-	font-size: 3.0em;
-    font-weight: normal;
-    letter-spacing: -2px;
-    text-align: left;
-    padding: 1em 15px 0 15px;
-}
-
 /* Lists */
 ul, ol {
 	margin: 10px 20px;
@@ -65,7 +58,7 @@ ol { list-style: decimal; }
 
 dt {
   font-weight: bold;
-  color: #7BA857;
+  color: var(--secondary-text-color);
 }
 dd {
   padding-left: 25px; 
@@ -127,7 +120,7 @@ th, td {
   	border-style: solid;
 }
 th {
-	color: #7BA857;
+	color: var(--secondary-text-color);
 	background: #EFFAE6;
 	padding: .8em 1em;	
   	border-color: #DFF4D5 #D3EFC3 #A7DF8A #D3EFC3;	
@@ -148,11 +141,11 @@ form {
 form p {
 	border-bottom: 1px solid #E6E6E6;
 	padding: 12px 0 5px 0;	margin: 0;	
-	color: #7BA857;
+	color: var(--secondary-text-color);
 }
 label {
 	font-weight: bold;
-	color: #7BA857;
+	color: var(--secondary-text-color);
 }
 input, select, textarea {
 	margin: 5px 0;
@@ -164,7 +157,7 @@ input, select, textarea {
 	font: 11px 'Lucida Grande', Verdana, Helvetica, sans-serif;
 }
 input:focus, select:focus, textarea:focus {
-	color: #7BA857;
+	color: var(--secondary-text-color);
 	background: #EFFAE6;
 }
 #name, #email, #message, #website {
@@ -214,6 +207,13 @@ body.post #header {
 }
 
 #header h1#logo-text { margin: 0; padding: 0; }
+body.post #header h1#logo-text {
+	font-size: 3.0em;
+    font-weight: normal;
+    letter-spacing: -2px;
+    text-align: left;
+    padding: 1em 15px 0 15px;
+}
 #header h1#logo-text a {
 	position: absolute; 
 	margin: 0; padding: 0 5px 0 0;
@@ -236,7 +236,7 @@ body.post #header {
     line-height: 1.6em;
     font-style: italic;
     letter-spacing: -.5px;
-    color: #7ba45b;
+    color: var(--secondary-text-color);
     width: 400px;
     top: 156px;
     left: 21px;
@@ -366,7 +366,7 @@ body.post #header {
 	background-image: none;	
 	background-color: transparent;
 	border: none;
-	color: #7BA857;
+	color: var(--secondary-text-color);
 	padding-left: 0;	
 }
 .sidemenu ul li a span {
@@ -392,7 +392,7 @@ body.post #header {
 }
 .featured-post h4 a, 
 .featured-post h4 a:visited {
-	color: #7BA857;
+	color: var(--secondary-text-color);
 	border: none;
 }
 .featured-post .post-info {
