@@ -97,6 +97,22 @@ img.float-left {
   	margin: 5px 10px 10px 0px;
 }
 
+body.post div#main div.responsive-video-wrapper {
+	min-height: 600px;
+    width: 100%;
+    position: relative;
+    padding: 0;
+}
+body.post div#main div.responsive-video-wrapper iframe,
+body.post div#main div.responsive-video-wrapper object,
+body.post div#main div.responsive-video-wrapper embed {
+	position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
 code {
   	margin: 3px 0;
   	padding: 15px;
