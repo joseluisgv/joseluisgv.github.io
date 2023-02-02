@@ -110,7 +110,7 @@ body.post div#main div.responsive-video-wrapper embed {
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: 500px;
 }
 
 code {
@@ -352,8 +352,6 @@ body.post #header #nav ul li a {
 	border: none;
 	color: #111;
 	background: transparent;
-}
-#header #nav ul li#current {
 }
 #header #nav ul li#current a {	
 	color: #444;
