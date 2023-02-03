@@ -238,14 +238,20 @@
           
           // select all the images
           var query = document.querySelectorAll('.post_excerpt');
+
+          // Hide all
+          for (var k = 0; k < query.length; k++) {
+            var post = query[k];
+            post.style.display = 'none';
+          }
+
+          // Show selected
           for (var k = 0; k < query.length; k++) {
               var post = query[k];
 
               for (var cat = 0; cat < selectedCategories.length; cat++) {
-                // hide the post if it doesn't contain the tag we're looking for
-                if (post.getAttribute('categories').split(',').indexOf(selectedCategories[cat]) === -1) {
-                  post.style.display = 'none';
-                } else {
+                // Show the post if it does contain the tag we're looking for
+                if (post.getAttribute('categories').split(',').indexOf(selectedCategories[cat]) !== -1) {
                   post.style.display = 'block';
                 }
               }
