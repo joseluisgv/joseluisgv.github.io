@@ -381,6 +381,11 @@ body.post #main h3 {
 	color: #444;
 	border: none;
 }
+
+strong {
+	font-weight: bolder;
+}
+
 /* left columns */
 #left-columns h3 {
 	color: #444;
