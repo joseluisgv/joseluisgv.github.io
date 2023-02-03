@@ -235,6 +235,21 @@
             }
           }
           console.log(selectedCategories);
+          
+          // select all the images
+          var query = document.querySelectorAll('.post_excerpt');
+          for (var k = 0; k < query.length; i++) {
+              var post = query[k];
+
+              for (var cat = 0; cat < selectedCategories.length; j++) {
+                // hide the post if it doesn't contain the tag we're looking for
+                if (post.getAttribute('categories').split(',').indexOf(selectedCategories[cat]) === -1) {
+                  post.style.display = 'none';
+                } else {
+                  post.style.display = 'block';
+                }
+              }
+          }
       });
   }
 </script>
