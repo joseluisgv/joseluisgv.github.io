@@ -181,8 +181,8 @@ label {
 	font-weight: bold;
 	color: var(--secondary-text-color);
 }
-#category_selector > div {
-	
+#category_selector div {
+    display: inline-block;
 }
 #category_selector label {
     text-transform: capitalize;
