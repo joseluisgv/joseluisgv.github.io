@@ -239,22 +239,30 @@
           // select all the images
           var query = document.querySelectorAll('.post_excerpt');
 
-          // Hide all
-          for (var k = 0; k < query.length; k++) {
-            var post = query[k];
-            post.style.display = 'none';
-          }
-
-          // Show selected
-          for (var k = 0; k < query.length; k++) {
+          if (selectedCategories.length>0) {
+            // Hide all
+            for (var k = 0; k < query.length; k++) {
               var post = query[k];
+              post.style.display = 'none';
+            }
 
-              for (var cat = 0; cat < selectedCategories.length; cat++) {
-                // Show the post if it does contain the tag we're looking for
-                if (post.getAttribute('categories').split(',').indexOf(selectedCategories[cat]) !== -1) {
-                  post.style.display = 'block';
+            // Show selected
+            for (var k = 0; k < query.length; k++) {
+                var post = query[k];
+
+                for (var cat = 0; cat < selectedCategories.length; cat++) {
+                  // Show the post if it does contain the tag we're looking for
+                  if (post.getAttribute('categories').split(',').indexOf(selectedCategories[cat]) !== -1) {
+                    post.style.display = 'block';
+                  }
                 }
-              }
+            }
+          } else {
+            // Show all
+            for (var k = 0; k < query.length; k++) {
+              var post = query[k];
+              post.style.display = 'block';
+            }
           }
       });
   }
