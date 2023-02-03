@@ -39,12 +39,12 @@
         <div id="category_selector">
           <form name="categoriesSelector"><fieldset>
             <legend>Categorías:</legend>
-            <input type="radio" name="category" id="buceo" value="buceo" /><label for="buceo">buceo</label>
-            <input type="radio" name="category" id="aventuras y viajes" value="aventuras y viajes" /><label for="aventuras y viajes">aventuras y viajes</label>
-            <input type="radio" name="category" id="naturaleza" value="naturaleza" /><label for="naturaleza">naturaleza</label>
-            <input type="radio" name="category" id="economía y negocios" value="economía y negocios" /><label for="economía y negocios">economía y negocios</label>
-            <input type="radio" name="category" id="sociedad" value="sociedad" /><label for="sociedad">sociedad</label>
-            <input type="radio" name="category" id="redes sociales" value="redes sociales" /><label for="redes sociales">redes sociales</label>
+            <div><input type="checkbox" name="category" id="buceo" value="buceo" /><label for="buceo">buceo</label></div>
+            <div><input type="checkbox" name="category" id="aventuras y viajes" value="aventuras y viajes" /><label for="aventuras y viajes">aventuras y viajes</label></div>
+            <div><input type="checkbox" name="category" id="naturaleza" value="naturaleza" /><label for="naturaleza">naturaleza</label></div>
+            <div><input type="checkbox" name="category" id="economía y negocios" value="economía y negocios" /><label for="economía y negocios">economía y negocios</label></div>
+            <div><input type="checkbox" name="category" id="sociedad" value="sociedad" /><label for="sociedad">sociedad</label></div>
+            <div><input type="checkbox" name="category" id="redes sociales" value="redes sociales" /><label for="redes sociales">redes sociales</label></div>
           </fieldset></form>
         </div>
         
@@ -228,11 +228,11 @@
   var prev = null;
   for (var i = 0; i < rad.length; i++) {
       rad[i].addEventListener('change', function() {
-          (prev) ? console.log(prev.value): null;
+          (prev) ? console.log("PREVIO:" + prev.value): null;
           if (this !== prev) {
               prev = this;
           }
-          console.log(this.value)
+          console.log("AHORA: " + this.value)
       });
   }
 </script>

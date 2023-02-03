@@ -181,6 +181,15 @@ label {
 	font-weight: bold;
 	color: var(--secondary-text-color);
 }
+#category_selector > div {
+	
+}
+#category_selector label {
+    text-transform: capitalize;
+    display: inline-block;
+    margin: 0 10px 0 3px;
+}
+
 input, select, textarea {
 	margin: 5px 0;
 	padding: 5px;
